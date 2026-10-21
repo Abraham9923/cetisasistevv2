@@ -1,7 +1,8 @@
 # ADR-009: No. de control de 14 dígitos, QR con el No. de control y escaneo del prefecto
 
-**Estado:** Aceptada y aplicada en la app (19 de octubre de 2026). **Falta** publicar las
-reglas nuevas en la consola y volver a crear al alumno de prueba (ver "Acciones").
+**Estado:** Aceptada y aplicada en la app (19 de octubre de 2026). Reglas publicadas y perfiles
+actualizados en la consola el 20 de octubre. **Falta** volver a crear al alumno de prueba
+(ver "Acciones").
 **Fecha:** 19 de octubre de 2026
 **Quién decide:** el equipo de CetisAsiste (pedido del usuario)
 **Reemplaza a:** DECISIONES J6 (QR con texto al azar) y DECISIONES K6 (escaneo "Próximamente")
@@ -102,9 +103,9 @@ Respuestas del usuario (19 de octubre):
    (`firebase/firestore.rules`) y perfiles (`firebase/roles.json`).
 2. [x] 14 dígitos al iniciar sesión y en la captura; QR con `CETIS61:` + No. de control.
 3. [x] Escáner, captura y resultado; lógica de alertas con 20 pruebas; guardar en lote.
-4. [ ] **Publicar `firebase/firestore.rules` en la consola** (sin esto, el alumno nuevo no
+4. [x] (20 oct, la publicó el usuario) **Publicar `firebase/firestore.rules` en la consola** (sin esto, el alumno nuevo no
    puede leer sus datos: las reglas viejas buscan `matricula`).
-5. [ ] **Actualizar `roles/alumno` en la consola** con lo de `firebase/roles.json`
+5. [x] (20 oct, bitácora 20-04) **Actualizar `roles/alumno` en la consola** con lo de `firebase/roles.json`
    (`inicioDeSesion = no_control`, `camposDelUsuario = [noControl]`) y `roles/prefecto`.
 6. [ ] **Volver a crear al alumno de prueba** con un No. de control inventado de 14 dígitos
    (pasos en BASE_DE_DATOS §10.1) y cambiar el `hijos` del padre de prueba.

@@ -1,5 +1,5 @@
 {
-  "_explicacion": "Perfiles de usuario de CetisAsiste. Cada objeto es un documento de la colección roles/{id} en Firestore. Fuente: documento 'CetisAsiste — Pantallas por rol' (7 oct 2026), en docs/referencias/PANTALLAS_POR_ROL.md. Copia de lo que hay en Firestore (se capturaron desde la consola el 19 oct 2026). Si cambias un perfil en la consola, cámbialo también aquí. Ver docs/BASE_DE_DATOS.md §4.9. 20 oct 2026: Enfermería confirmada en web (ADR-011); falta ponerlo en la consola.",
+  "_explicacion": "Perfiles de usuario de CetisAsiste. Cada objeto es un documento de la colección roles/{id} en Firestore. Fuente: documento 'CetisAsiste — Pantallas por rol' (7 oct 2026), en docs/referencias/PANTALLAS_POR_ROL.md. Copia de lo que hay en Firestore (se capturaron desde la consola el 19 oct 2026). Si cambias un perfil en la consola, cámbialo también aquí. Ver docs/BASE_DE_DATOS.md §4.9. 20 oct 2026: Enfermería confirmada en web (ADR-011); ya está en la consola, igual que alumno y prefecto con No. de control.",
   "roles": [
     {
       "id": "alumno",
